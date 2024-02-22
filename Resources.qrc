@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/Remove.png</file>
+        <file>icons/ScreenSaver.ico</file>
+        <file>icons/Logo.png</file>
+        <file>Images/logo.png</file>
+        <file>icons/About Connection.png</file>
+        <file>icons/Preview.png</file>
+        <file>icons/Search.png</file>
+        <file>icons/Copy.png</file>
+        <file>icons/SelectAll.png</file>
+        <file>Images/HeadBmp.bmp</file>
+        <file>icons/Load.png</file>
+        <file>icons/Options.png</file>
+        <file>icons/Find.png</file>
+        <file>icons/Save.png</file>
+        <file>icons/Settings.png</file>
+        <file>docs/Packets.pdf</file>
+        <file>icons/Location.png</file>
+        <file>icons/Device.png</file>
+        <file>icons/Add.png</file>
+        <file>icons/Edit.png</file>
+        <file>icons/Start.png</file>
+        <file>icons/Stop.png</file>
+    </qresource>
+</RCC>
