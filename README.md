@@ -1,3 +1,11 @@
+-------------------------------------------------------------------
+
+Qt 6.5.3
+Qt Creator 12.0.2
+MinGW 11.2.0 x64
+
+-------------------------------------------------------------------
+
 Description
 
 The program should take a screenshot every minute (start/stop should be done with a button). Each
@@ -10,3 +18,5 @@ on the grid (Grid View) with an indicator of similarity to the previous snapshot
 
 The snapshots, hash sum and % should be stored in the DB, and when the program is restarted,
 these snapshots should be loaded into the program.
+
+-------------------------------------------------------------------
