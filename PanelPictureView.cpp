@@ -56,7 +56,6 @@ void PanelPictureView::createInterface()
 
 	//
 	//
-
 	m_imageLable = new QLabel(m_pPictureWindow);
 	if (m_imageLable == nullptr)
 	{
@@ -156,6 +155,8 @@ void PanelPictureView::showPicture(DataPacket packet)
         return;
     }
 
+    //
+    //
     QPixmap pixmap = m_pixmap.transformed(QTransform().scale(0.3, 0.3));
 
     m_imageLable->setPixmap(pixmap);

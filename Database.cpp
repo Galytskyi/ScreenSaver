@@ -36,7 +36,7 @@ int SqlFieldBase::init(int objectType, int)
 			append("ObjectID",						QMetaType::Int);
 			append("PictureID",						QMetaType::Int);
 
-            append("Hash",						QMetaType::Long);
+            append("Hash",                          QMetaType::Long);
             append("PacketTime",					QMetaType::QTime);
 
 			append("ImageWidth",					QMetaType::Int);

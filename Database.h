@@ -10,14 +10,13 @@
 // ==============================================================================================
 
 #define					DATABASE_NAME		"ScreenSaver"
-#define					DATABASE_VERSION	2
+#define					DATABASE_VERSION	1
 
 // ==============================================================================================
 
 const char* const migration[DATABASE_VERSION] =
 {
-    "ALTER TABLE PicturesInfo ADD Brightness INTEGER;",			// 1
-    "ALTER TABLE PicturesInfo ADD Location VARCHAR(256);",		// 2
+    "ALTER TABLE PicturesInfo ADD CmpPercent DOUBLE;",			// 1
 };
 
 // ==============================================================================================
