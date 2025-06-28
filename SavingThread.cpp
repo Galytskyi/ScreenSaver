@@ -2,6 +2,7 @@
 
 #include "Options.h"
 #include "PacketBase.h"
+#include <functional>
 
 // -------------------------------------------------------------------------------------------------------------------
 
@@ -59,8 +60,7 @@ void SavingThread::createScreenshot()
     // time hash
     //
     QDateTime currentTime = QDateTime::currentDateTime();
-    QString currentTimeStr = timeToStr(currentTime);
-    std::size_t timeHash = std::hash<std::string>{}(currentTimeStr.toStdString());
+    std::size_t timeHash = std::hash<qint64>{}(currentTime.toMSecsSinceEpoch());
 
     pPacket->setHash(timeHash);
     pPacket->setPacketTime(currentTime);

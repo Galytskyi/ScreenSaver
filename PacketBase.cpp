@@ -290,21 +290,11 @@ PacketBase::PacketBase(QObject *parent)
  // -------------------------------------------------------------------------------------------------------------------
  // -------------------------------------------------------------------------------------------------------------------
 
- QString timeToStr(const QDateTime& dateTime)
- {
-	 QString timeStr;
-
-	 timeStr = QString::asprintf("%02d-%02d-%04d %02d:%02d:%02d",
-
-								 dateTime.date().day(),
-								 dateTime.date().month(),
-								 dateTime.date().year(),
-
-								 dateTime.time().hour(),
-								 dateTime.time().minute(),
-								 dateTime.time().second());
-	 return timeStr;
- }
+QString timeToStr(const QDateTime& dateTime)
+{
+    // Use Qt's formatting capabilities for a concise implementation.
+    return dateTime.toString(IMG_PACKET_TIME_FORMAT);
+}
 
  // -------------------------------------------------------------------------------------------------------------------
  // -------------------------------------------------------------------------------------------------------------------
